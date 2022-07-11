@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { TypeOfFood} from "./component/food/typeofFood";
+import {Parent} from "./component/parent"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>TechMojo</h1>
+
+<p><u>TechMojo is an outsourced product development and technology services company,specialising in building massively scalable web based products</u></p>
+<ul>
+<li>Juice</li>
+  <li>Coffee</li>
+  <li>Coffeelatte</li>
+</ul>
+      <Parent/>
+      <TypeOfFood />
     </div>
   );
 }
